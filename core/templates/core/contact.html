@@ -1,0 +1,41 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Contacto – Joseph Dager Alva{% endblock %}
+
+{% block content %}
+
+<section class="hero-section">
+  <div class="row g-4">
+
+    <div class="col-lg-6">
+      <div class="hero-card">
+        <div class="hero-tag mb-3">
+          <img src="{% static 'core/img/casco-ahora-nacion.png' %}" alt="Símbolo electoral">
+          <span>CONTACTO</span>
+        </div>
+
+        <h1 class="hero-title mb-2">Contáctanos</h1>
+        <p class="hero-subtitle">
+          Si quieres apoyar, proponer una idea o invitar a Joseph a una actividad,
+          escríbenos. Te responderemos lo antes posible.
+        </p>
+
+        <hr class="my-4">
+
+        <p class="mb-2"><i class="bi bi-envelope me-2"></i>elprofedager@gmail.com</p>
+        <p class="mb-2"><i class="bi bi-telephone me-2"></i>912 839 327</p>
+        <p class="mb-0"><i class="bi bi-instagram me-2"></i>@elprofedager</p>
+      </div>
+    </div>
+
+    <div class="col-lg-5">
+      <div class="hero-photo">
+        <img src="{% static 'core/img/dk-joseph.jpg' %}" alt="Joseph Dager Alva">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

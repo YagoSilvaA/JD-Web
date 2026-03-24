@@ -1,0 +1,110 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Propuestas – Joseph Dager Alva{% endblock %}
+
+{% block content %}
+
+<section class="hero-section">
+  <div class="hero-card text-center">
+    <div class="hero-tag mb-3">
+      <img src="{% static 'core/img/casco-ahora-nacion.png' %}" alt="Símbolo electoral">
+      <span>PROPUESTAS</span>
+    </div>
+
+    <h1 class="hero-title mb-2">Propuestas clave</h1>
+    <p class="hero-subtitle mx-auto">
+      Un plan con prioridades claras: institucionalidad y educación de calidad.
+    </p>
+  </div>
+</section>
+
+<section class="pillars-section">
+  <div class="row g-3">
+
+    <div class="col-md-6 col-lg-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-shield-lock"></i></div>
+        <h3 class="h5 fw-bold">Derogar leyes pro crimen</h3>
+        <ul class="mt-2 mb-0">
+          <li>El 28 de julio del 2026 propondremos un Proyecto de Ley para derogar todas las leyes pro crimen
+             promulgadas por el actual congreso</li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-bank"></i></div>
+        <h3 class="h5 fw-bold">Garantizar 'Beca 18'</h3>
+        <ul class="mt-2 mb-0">
+          <li>Apoyo total a Beca 18 y a los jóvenes talento del Perú.</li>
+          <li>Asegurar el financiamento de las becas en el presupuesto anual.</li>
+      
+        </ul>
+      </div>
+    </div>
+<!-- 
+    <div class="col-md-6 col-lg-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-briefcase"></i></div>
+        <h3 class="h5 fw-bold">Empleo y economía</h3>
+        <ul class="mt-2 mb-0">
+          <li>Impulso al empleo formal.</li>
+          <li>Apoyo a emprendedores y MYPES.</li>
+          <li>Trabas menos, oportunidades más.</li>
+        </ul>
+      </div>
+    </div>
+ -->
+    <div class="col-md-6 col-lg-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-mortarboard"></i></div>
+        <h3 class="h5 fw-bold">Educación superior de calidad</h3>
+        <ul class="mt-2 mb-0">
+          <li>Ley General de Educación Superior: entender la educacion universitaria y técnica como un todo</li>
+          <li>Una sola entidad supervisora para toda la educacion superior.</li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- 
+    <div class="col-md-6 col-lg-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-hospital"></i></div>
+        <h3 class="h5 fw-bold">Salud y bienestar</h3>
+        <ul class="mt-2 mb-0">
+          <li>Atención digna y más eficiente.</li>
+          <li>Prevención y salud comunitaria.</li>
+          <li>Mejor gestión de recursos.</li>
+        </ul>
+      </div>
+    </div>
+ 
+
+    <div class="col-md-6 col-lg-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-building-check"></i></div>
+        <h3 class="h5 fw-bold">Estado que funcione</h3>
+        <ul class="mt-2 mb-0">
+          <li>Meritocracia y orden institucional.</li>
+          <li>Trámites más simples.</li>
+          <li>Menos burocracia, más resultados.</li>
+        </ul>
+      </div>
+    </div>
+     -->
+
+
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="{% url 'contact' %}" class="btn btn-primary">
+      <i class="bi bi-megaphone me-2"></i>
+      Súmate al equipo
+    </a>
+  </div>
+</section>
+
+{% endblock %}

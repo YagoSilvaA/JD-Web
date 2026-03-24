@@ -1,0 +1,56 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Publicaciones – Joseph Dager Alva{% endblock %}
+
+{% block content %}
+
+<section class="hero-section">
+  <div class="hero-card text-center mb-4">
+    <div class="hero-tag mb-3">
+      <img src="{% static 'core/img/casco-ahora-nacion.png' %}" alt="Símbolo electoral">
+      <span>PUBLICACIONES</span>
+    </div>
+    <h1 class="hero-title mb-2">Publicaciones del candidato</h1>
+    <p class="hero-subtitle mx-auto">
+      Artículos, comunicados y libros escritos o relacionados con Joseph Dager Alva.
+    </p>
+  </div>
+</section>
+
+<!-- Publicaciones con carátula y enlace -->
+<section class="pillars-section mb-5">
+  <h2 class="h3 fw-bold mb-3">Artículos y noticias</h2>
+  <div class="row g-4">
+    {% for pub in publicaciones %}
+    <div class="col-md-4">
+      <div class="pillar-card text-center">
+        <img src="{% static pub.caratula %}" alt="{{ pub.titulo }}" class="mb-3 rounded" style="height:250px; object-fit:cover; width:100%;">
+        <h3 class="h5 fw-bold mb-2">{{ pub.titulo }}</h3>
+        
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- PDFs descargables -->
+<section class="pillars-section mb-5">
+  <h2 class="h3 fw-bold mb-3">Libros y artículos en PDF</h2>
+  <div class="row g-4">
+    {% for pdf in pdfs %}
+    <div class="col-md-4">
+      <div class="pillar-card text-center">
+        <h3 class="h5 fw-bold mb-2">{{ pdf.titulo }}</h3>
+        <i class="bi bi-file-earmark-pdf" style="font-size:3rem; color:#CF2E26;"></i>
+        <a href="{% static pdf.archivo %}" download class="btn btn-primary btn-sm mt-2 w-100">
+          <i class="bi bi-download me-2"></i>
+          Descargar PDF
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

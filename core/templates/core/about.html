@@ -1,0 +1,121 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Sobre Joseph – Joseph Dager Alva{% endblock %}
+
+{% block content %}
+
+<section class="hero-section">
+  <div class="row g-4 align-items-center">
+
+    <!-- Texto de la izquierda -->
+    <div class="col-lg-6">
+      <div class="hero-card">
+        <div class="hero-tag mb-2">
+          <img src="{% static 'core/img/casco-ahora-nacion.png' %}" alt="Símbolo electoral">
+          <span>AHORA NACIÓN</span>
+        </div>
+
+        <h1 class="hero-title mb-3">Sobre Joseph Dager Alva</h1>
+
+        <p class="hero-subtitle mb-4">
+          Joseph Dager Alva es un profesional comprometido con la gestión pública, la docencia y el fortalecimiento de instituciones democráticas en el Perú. Su trayectoria combina liderazgo en medios estatales, universidades y procesos de modernización institucional.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a href="{% url 'proposals' %}" class="btn btn-primary">
+            <i class="bi bi-clipboard-check me-2"></i>
+            Ver propuestas
+          </a>
+          <a href="{% url 'contact' %}" class="btn btn-outline-dark">
+            Contactar al equipo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel de fotos a la derecha -->
+    <div class="col-lg-5">
+      <div id="carouselJoseph" class="carousel slide hero-photo" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'core/img/camisa-azul-joseph-vertical.jpg' %}" class="d-block w-100" alt="Joseph Dager 1">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'core/img/el-pensador-joseph-vertical.jpg' %}" class="d-block w-100" alt="Joseph Dager 2">
+          </div>
+          
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselJoseph" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselJoseph" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Sección “Quién es el candidato” -->
+<section class="pillars-section">
+  <h2 class="h3 fw-bold mb-4">Quién es Joseph Dager Alva</h2>
+
+  <div class="row g-4">
+
+    <!-- Gestión pública -->
+    <div class="col-md-6">
+      <div class="pillar-card">
+        <h3 class="h5 fw-bold mb-2">Gestión Pública</h3>
+        <p>En junio de 2010 fue nombrado jefe institucional del Archivo General de la Nación (AGN), impulsando reorganización institucional, digitalización del patrimonio y mejoras presupuestales.</p>
+        <p>En 2018 fue secretario general de SUNEDU, participando en procesos de licenciamiento universitario, reforma universitaria y comunicación con la ciudadanía.</p>
+        <p>En 2021 fue presidente del directorio del IRTP, promoviendo pluralidad y objetividad informativa, programación cultural y defensa de valores democráticos.</p>
+      </div>
+    </div>
+
+    <!-- Docencia -->
+    <div class="col-md-6">
+      <div class="pillar-card">
+        <h3 class="h5 fw-bold mb-2">Docencia</h3>
+        <p>Retomó la docencia en la PUCP, dictando cursos de Historia del Perú Republicano, Historia del siglo XIX y Historiografía Latinoamericana.</p>
+        <p>Desde 2012 es profesor a tiempo completo en la Universidad Antonio Ruiz de Montoya (UARM), dictando Historia del Perú, Pensamiento Político Peruano y Teoría del Estado.</p>
+        <p>Ha ocupado diversos cargos de gestión académica: jefe de Oficina de Admisión, Beca 18, Relaciones Institucionales, director de Posgrado y vicerrector académico.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Sección “Valores y pilares” -->
+<section class="pillars-section mt-4">
+  <h2 class="h3 fw-bold mb-4">Valores y pilares</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-shield-check"></i></div>
+        <h3 class="h5 fw-bold">Integridad</h3>
+        <p>Tolerancia cero a la corrupción y decisiones transparentes en la gestión pública.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-people"></i></div>
+        <h3 class="h5 fw-bold">Servicio a la ciudadanía</h3>
+        <p>Priorizando la eficiencia, la comunicación y la cercanía con los ciudadanos.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-building-check"></i></div>
+        <h3 class="h5 fw-bold">Fortalecimiento institucional</h3>
+        <p>Promoviendo instituciones robustas, meritocracia y profesionalización de la gestión pública.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

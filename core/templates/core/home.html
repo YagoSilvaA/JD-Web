@@ -1,0 +1,91 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Inicio – Joseph Dager Alva{% endblock %}
+
+{% block content %}
+
+<!-- Banner horizontal debajo del navbar 
+<div class="banner-horizontal mb-4">
+    <img src="{% static 'core/img/compu-joseph-banner.jpg' %}" alt="Banner Ahora Nación" class="img-fluid w-100 rounded">
+</div>
+-->
+<section class="hero-section">
+  <div class="row g-4 align-items-center">
+
+    <div class="col-lg-7">
+      <div class="hero-card">
+
+        <div class="hero-tag mb-3">
+          <img src="{% static 'core/img/casco-ahora-nacion.png' %}" alt="Símbolo electoral">
+          <span>AHORA NACIÓN</span>
+        </div>
+
+        <h1 class="hero-title mb-3">
+          Es hora de reconstruir la Nación.
+        </h1>
+
+        <p class="hero-subtitle mb-4">
+          Construyamos un país en el que se respeten las leyes, se recuperen las instituciones
+           y tengamos una educación de calidad
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a href="{% url 'proposals' %}" class="btn btn-primary btn-lg">
+            <i class="bi bi-clipboard-check me-2"></i>
+            Ver propuestas clave
+          </a>
+
+          <a href="{% url 'about' %}" class="btn btn-outline-dark">
+            Conocer su trayectoria
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-5">
+      <div class="hero-photo">
+        <img src="{% static 'core\img\23-joseph-vertical.jpg' %}" alt="Joseph Dager Alva">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="pillars-section">
+  <div class="row g-3">
+
+    <div class="col-md-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-bank"></i></div>
+        <h3 class="h5 mb-2">Transparencia</h3>
+        <p class="mb-0">
+          Gobierno con cuentas claras, presupuesto abierto y cero tolerancia a la corrupción.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-graph-up-arrow"></i></div>
+        <h3 class="h5 mb-2">Oportunidades</h3>
+        <p class="mb-0">
+          Más empleo formal, apoyo a emprendedores y educación útil para que la gente progrese.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="bi bi-shield-lock"></i></div>
+        <h3 class="h5 mb-2">Seguridad</h3>
+        <p class="mb-0">
+          Inteligencia, prevención y acción firme contra el crimen para recuperar la paz en las calles.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
