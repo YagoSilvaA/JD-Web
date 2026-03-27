@@ -131,9 +131,42 @@
       /* fuerza que la imagen llene todo el contenedor */
       object-fit: cover;
       /* recorta proporcionalmente si es necesario */
-      object-position: center;
+      object-position: center 5%;
       /* centra el foco de la imagen */
+      border-radius: 1rem;
+    }
+
+    /* Hero photo para Contact */
+    .hero-photo-contact {
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+      width: 100%;
+      height: 450px;
+      /* ajusta según la altura que quieras */
+    }
+
+    .hero-photo-contact img {
+      width: 100%;
+      height: 100%;
       display: block;
+      object-fit: cover;
+      /* mantiene proporción y llena contenedor */
+      object-position: center 30%;
+      /* mueve la cara hacia el centro del contenedor */
+    }
+
+    /* Responsive para móviles */
+    @media (max-width: 768px) {
+      .hero-photo-contact {
+        height: 300px;
+        /* altura menor en móviles */
+      }
+
+      .hero-photo-contact img {
+        object-position: center 40%;
+        /* ajustar foco en móviles */
+      }
     }
 
     .carousel-item img {
@@ -142,7 +175,7 @@
       /* fuerza que la imagen llene el contenedor */
       object-fit: cover;
       /* recorta proporcionalmente sin deformar */
-      object-position: center ;
+      object-position: center;
     }
 
     .pillars-section {

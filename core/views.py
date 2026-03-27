@@ -31,11 +31,13 @@ def publicaciones(request):
     pdfs = [
         {
             'titulo': 'Historiografía y nación en el Perú del siglo XIX',
-            'archivo': 'core/pdfs/histopub1.pdf'
+            'archivo': 'core/pdfs/histopub1.pdf',
+            'portada': 'core/img/histopub1.png'
         },
         {
             'titulo': 'La visión de los historiadores. Desde los orígenes republicanos hasta su proyección actual',
-            'archivo': 'core/pdfs/visionpub2.pdf'
+            'archivo': 'core/pdfs/visionpub2.pdf',
+            'portada': 'core/img/visionpub2.png'
         }
     ]
 
